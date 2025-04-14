@@ -1,0 +1,118 @@
+/* General Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #36b1c2; /* Light blue background */
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+/* Display Screen */
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #00796b; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons Layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Styles */
+.button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #ffeb3b; /* Yellow background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #004d40; /* Dark text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+.button:hover {
+    background-color: #ffd54f; /* Lighter yellow on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Special Operator Buttons */
+.button:active {
+    background-color: #f57c00; /* Dark orange when clicked */
+    color: white;
+}
+
+/* Clear Button (C) */
+button:nth-child(2) {
+    background-color: #f44336; /* Red for clear */
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #e57373; /* Lighter red on hover */
+}
+
+button:nth-child(2):active {
+    background-color: #d32f2f; /* Darker red on click */
+}
+
+/* Equal Button */
+button:nth-child(15) {
+    background-color: #4caf50; /* Green for equals */
+    color: white;
+}
+
+button:nth-child(15):hover {
+    background-color: #66bb6a; /* Lighter green on hover */
+}
+
+button:nth-child(15):active {
+    background-color: #388e3c; /* Darker green on click */
+}
+
+/* Operator Buttons (+, -, *, /) */
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+    background-color: #1b8deb; /* Blue for operators */
+    color: white;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover {
+    background-color: #186bb0; /* Lighter blue on hover */
+}
+
+button:nth-child(4):active,
+button:nth-child(8):active,
+button:nth-child(12):active,
+button:nth-child(16):active {
+    background-color: #1075d9; /* Darker blue on click */
+}
